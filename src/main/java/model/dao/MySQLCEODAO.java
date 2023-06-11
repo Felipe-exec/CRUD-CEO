@@ -38,8 +38,6 @@ public class MySQLCEODAO implements CEODAO {
 				+ " WHERE id = ?; "; 
         
         
-        
-        
         db.prepareStatement(sqlUpdate);
         db.setString(1, ceo.getCpf());
         db.setString(2, ceo.getRg());
