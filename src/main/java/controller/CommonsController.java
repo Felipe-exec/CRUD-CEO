@@ -39,7 +39,7 @@ public class CommonsController {
 		}
 		
 		if (listCompanies != null)
-			req.setAttribute("users", listCompanies);		
+			req.setAttribute("companies", listCompanies);		
 	}
 	
 	public static void listAll(HttpServletRequest req) {
