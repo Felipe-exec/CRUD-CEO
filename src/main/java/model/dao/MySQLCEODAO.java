@@ -31,11 +31,13 @@ public class MySQLCEODAO implements CEODAO {
         DBHandler db = new DBHandler();
         
         String sqlUpdate = "UPDATE ceos "
-        		+ " SET cpf = ?, "
-        		+ " rg = ?, "
-        		+ " user_id = ?, "
-        		+ " company_id = ?, "
-        		+ " WHERE id = ?; ";
+				+ " SET cpf = ?, "
+				+ " rg = ?, "
+				+ " user_id = ?, "
+				+ " company_id = ? "
+				+ " WHERE id = ?; "; 
+        
+        
         
         
         db.prepareStatement(sqlUpdate);
